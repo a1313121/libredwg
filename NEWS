@@ -59,6 +59,7 @@ Minor bugfixes / fuzzing fixes:
   * Fixed DXF input termination at mmap page boundaries, avoiding writes
     for binary and newline-terminated input and buffering Windows input
     that needs a trailing newline.
+  * Fixed pre-R14 binary DXF imports ending at the EOF group.
   * Fixed ATTRIB DXF version and position-lock flags being conflated with
     an unrelated AcDbXrecord field.  GH #1399.
   * Fixed large R2007+ string streams, APPID table counts above 255, and
